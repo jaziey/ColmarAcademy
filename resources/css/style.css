@@ -1,0 +1,531 @@
+html{
+	font-size: 18px;
+	font-family: 'Barlow Condensed', sans-serif;
+	color: hsla(78, 2%, 33%, 1);
+}
+body{
+  background-color: hsla(199, 100%, 93%, 1);  
+}
+.container{
+	max-width: 100%; /* makes nav bar go across entire width */
+	margin: 0 auto;
+} 
+
+	 
+/* ------------Section Logo -----------------------------*/
+
+nav {
+	display: flex; /* moves 2 divs to right of logo */
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	justify-content: space-between; /*moves ul to far right */
+	height: 64px;
+	background-color: hsla(199, 100%, 93%, 1); /* no change */
+}
+nav div{
+	display: flex;
+	align-items: center;
+}
+nav img{
+	height: 2rem;
+	margin-left: 24px; 
+	padding: 16px 0; 
+}  
+nav li{
+	padding-right: 16px; /* indiv padding to right of menu
+	                     is 16px */
+	display: inline;
+}
+.menu a{
+	text-decoration:none;
+}
+.menu a:hover{
+	color: #2980B9;
+}
+ 
+nav{
+	/*padding-right: 8px; /* try adding more margin to right of
+	                    menu to give total of 24px */
+}
+
+h2{
+	font-size: 2rem;
+}
+.mobileHidden{
+	display: none;
+}
+
+@media only screen and (max-width: 700px){
+	.logo span{
+		display: none;
+	}
+	.menu ul {
+		display: none;
+	} 
+	.menu ul.mobileHidden {
+		display: inline;
+	} 
+	 nav{
+	 	 
+	 	align-items: center;
+	 	justify-content: space-between;
+	 }
+	 
+}
+
+
+/*-------------------- Section Learn Something new ---------------------*/
+ .container{
+ 	background-color: hsla(199, 100%, 93%, 1);
+ 	max-width: 100%;
+ }
+ .flexlike{
+	display: flex;
+	align-items: center; 
+	justify-content:flex-end; 
+   
+}
+.banner-img{
+	max-width: 60%;
+}
+.banner-img img{
+	padding-top: 32px;
+	padding-left: 24px;
+	max-width: 100%;
+	margin-bottom: 32px;
+	height: auto;
+}
+.banner-first{
+	padding-top: 2rem;
+	padding-left: 24px;
+	max-width:40%;
+	padding-top: 1%;
+	margin-right: 10px;
+}
+.banner-first h1{
+   font-size: 1.8rem;
+	font-weight: bold;
+	/* padding-top: 25px; */
+	padding-left: 24px;
+	padding-bottom: 24px;
+}
+.banner-first h3{
+   font-size: 1rem;
+   font-weight: normal;
+   padding-left: 24px;
+   padding-bottom: 24px;
+}
+.banner-first button{
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+ 
+.btn{  /* btn represents the text 'start here' padding fills the button tag, does not affect
+        the text*/
+	margin-left: 24px;
+	background-color: hsla(44, 100%, 81%, 1);
+	padding: 40px 98px;
+}
+.btn:hover{
+  background-color: #2980D9;
+}
+@media only screen and  (max-width: 700px){
+   .flexlike{
+   	flex-direction: column;
+   	/*justify-content: center; 
+   	align-items: center; */
+   }
+   .banner-img {
+   	max-width: 100%;
+   	height: auto;
+   }
+   .banner-img img{ /* removing padding even outs vertical alignment*/
+   	padding-right: 0;
+   	padding-left: 0;
+   }
+   .banner-first{
+   	max-width: 100%;
+   	text-align: center;
+   	padding-right: 0;
+   	padding-left: 0;
+   }
+    .banner-first button{
+       max-width: 100%;
+       margin-bottom: 32px;
+   }  
+   .btn{
+   	width: 100%;
+   
+   }
+    
+}
+/* ------------------ Section It doesnt hurt-----------------------------*/
+.container2{
+	border-style: none;
+	background-color: hsla(199, 100%, 93%, 1);
+	max-width: 100%;
+}
+.hiddenPic{
+	display:none;
+}
+.flexlike2{
+	display: flex;
+	align-items: flex-start; 
+	justify-content:flex-end; 
+	padding-top: 32px;
+}
+.banner2-img{
+	max-width: 60%;
+	/*margin-left: 24px; */
+}
+.banner2-img img{
+	max-width: 100%;
+	margin: 0 24px; 
+}
+ 
+.services{
+	max-width: 40%;
+	display: flex;
+	flex-direction: column;
+	 
+ } 
+  .serv{
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: space-between;
+ 	margin-left: 24px;
+ }
+/*.shadebox{
+ 	background-color: hsla(44, 100%, 81%, 1);
+ 	max-width: 100%; 
+*/
+ } 
+ .shadebox:hover{
+ 	background-color: #2980D9;
+ }
+ .threeImg{
+   max-width: 35%;
+   transition: .5s ease;
+ }   
+ .threeImg:hover{
+ 	opacity: 0.3;
+ }
+.orient img{
+ 		max-width: 100%;
+ 		margin-left: 24px;
+ 		padding: 16px; /* make fit in box */
+ 		 
+ }
+.ourCampus img{
+	max-width: 100%;
+ 	margin-left: 24px;
+ 	padding: 16px; /* make fit in box */
+}
+.guestLec img{
+    max-width: 100%;
+ 	margin-left: 24px;
+ 	padding: 16px; /* make fit in box */
+  
+}
+.words{
+	max-width: 65%;
+	flex: 1;
+} 
+.words h4{
+	font-size: 0.8rem;
+}
+.words h3, h4{
+	max-width: 100%;
+	padding-left: 30px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	line-height: 1.0;
+	/*border-style: solid;
+	border-color: lightgrey; */
+}
+.words h3{
+	font-weight: bold;
+
+}
+h4.read {
+	color: hsla(102, 2%, 55%, 1);
+}
+.read:hover{
+	font-weight: bold;
+}
+h1.bolderBig{
+	padding-top: 32px;
+	padding-bottom: 24px;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+.bolderBig{
+	margin-left: 24px;
+} 
+.smalleryet{
+	font-weight: bold;
+	margin-top: 20px;
+}
+@media only screen and (max-width: 700px){
+ .banner2-img{
+ 	display: none;
+  } 
+ .threeImg{
+ 	display: none;
+  }
+   .flexlike2{ /* Centers img in center */
+   	justify-content: space-between; 
+  } 
+  .serv{
+  	display: block; /* moves text to next line beneath img  */
+    max-width: 100%; 
+   } 
+ .orient, .ourCampus, .guestLec{
+    display: none; 
+  }  
+ .words h4, h3{
+ display: block; 
+  } 
+ .services{
+ 	max-width: 100%;  /* maximizes imge for mobile */
+  } 
+ .hiddenPic{
+ 	display: block; 
+ 	flex-grow: 2;
+ 	/*max-width: 100%; 
+ 	/*margin-left: 1.2rem; */
+ 	margin-left: 16px;
+ 	margin-right: 16px;
+ 	padding-bottom: 32px;
+  }
+  .words h3, h4{
+  	padding-left: 0.3rem;
+  }
+  .read{
+  	padding-bottom: 64px;
+  }
+
+}
+/*------------------ Section Start Learning  -------------------*/
+.containerL{
+	border-style: none;
+	background-color: hsla(199, 100%, 93%, 1); 
+	max-width: 100%;
+	padding-bottom: 32px;
+}
+  h1.centerMe{
+ 	padding: 32px 0;
+ 	text-align: center; 
+ 	font-size: 1.8rem;
+ }
+ .learningBox1, .learningBox2{
+ 	max-width: 100%;
+ 	margin-left: 72px;
+ 	margin-right: 72px;
+ 	display: flex;
+ 	/*align-items: center;  want align items stretch which is default, causes
+ 	 row items to be even*/
+ 	justify-content: center;
+  }
+  .text{
+    color: hsla(78, 2%, 33%, 1);
+ 	padding-top: 16px;
+ 	padding-left: 16px;
+ 	padding-bottom: 24px;
+ 	line-height: 1.5;
+  }
+ .rectang{
+ 	flex: 1;
+ 	display: flex;
+ 	flex-direction: column; 
+ 	max-width: 26%;
+ 	background-color: hsla(44, 100%, 81%, 1); 
+ 	margin-right:32px;
+ 	margin-bottom: 32px;
+ }
+ .rectang: last-child{
+ 	margin-right: 0;
+
+ }
+ .rectang img{
+ 	max-width: 100%;
+ 	max-height: auto;
+ }
+ .rectang:hover{
+ 	background-color: #FFF59D;
+ }
+ .first{
+ 	font-weight: bold;
+ 	padding-bottom: 8px;
+ }
+ .sec{
+ 	padding-bottom: 8px;
+ }
+ @media only screen and (max-width: 700px){
+ .photo, .sec, p{
+  	display: none;
+    } 
+    .rectang{
+    	background-color: hsla(44, 100%, 81%, 1);
+    }
+   .hiddenflex1, .hiddenflex2{
+  	 display: flex; 
+  }
+   .learningBox1, .learningBox2{
+   	 flex-direction: column; 
+   	 align-items: flex-start;
+   	 flex-grow: 1;
+   	 display: block;
+  } 
+  .rectang{ /* This made the block long or helped anyway  was 26%*/
+  	max-width: 100%;
+  	height: 3rem;
+  	margin-bottom: 8px;
+   	margin-left: auto;
+  	margin-right: auto;
+  }
+  h1.centerMe{
+  	padding-bottom: 16px;
+  }
+
+ }
+ /*--------------------Section Video---------------------------*/
+ .container4{
+	border-style: none;
+	background-color: hsla(199, 100%, 93%, 1); 
+	max-width: 100%;
+}
+h1.centerThesis{
+ 	padding-top: 32px;
+ 	padding-bottom: 32px;
+ 	text-align: center; 
+ 	font-size: 1.8rem;
+ }
+.flexlike4{
+	display: flex;
+	align-items: flex-start; 
+	justify-content:flex-end; 
+	padding-top: 32px;
+
+}
+.fullength{
+	width: 100%;
+	background-color: black;
+	margin: 0 auto;
+}
+.banner-video{
+	max-width: 60%;
+}
+.banner-video video{
+	max-width: 100%;
+	margin-left: 24px;
+	margin-right: 24px;
+	margin-top: -24px;
+ }
+.vidServices{
+	max-width: 40%;
+	display: flex;
+	flex-direction: column;
+ } 
+  .vidServ{
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: space-between;
+ 	margin-left: 24px;
+ }
+
+
+
+ .shadebox{
+ 	background-color: hsla(199, 100%, 93%, 1);
+ 	max-width: 100%;
+ } 
+ .twoImg{
+   max-width: 35%;
+   transition: .5s ease;
+ }   
+ .twoImg:hover{
+ 	opacity: 0.3;
+ }
+  
+ .designPro img{
+ 		max-width: 100%;
+ 		margin-left: 24px;
+ 		padding: 16px; /* make fit in box */
+ }
+.nowThen img{
+	max-width: 100%;
+ 	margin-left: 24px;
+ 	padding: 16px; /* make fit in box */
+  
+}
+.words{
+	max-width: 65%;
+	flex: 1;
+	 
+} 
+.words h4{
+	font-size: 0.8rem;
+}
+.words h3, h4{
+	max-width: 100%;
+    margin-left: 16px; */
+   	padding-top: 8px;
+	padding-bottom: 8px;
+	line-height: 1.0;
+}
+.smallertype{
+	margin-bottom: 32px;
+}
+  @media only screen and (max-width: 700px){
+     .flexlike4{
+     	flex-direction: column;
+     	align-items: center;
+     }
+     .banner-video{
+	      max-width: 100%;
+}
+     .banner-video video{
+     	margin-left: auto;
+     	margin-right: auto;
+     	padding-bottom: 40px;
+     }
+    .banner-video h1, .banner-video h4, .vidServices, .fullength{
+     	display: none;
+     } 
+  }
+/*---------------------------Section Footer-----------------------*/
+.container5{
+	background-color: hsla(199, 100%, 93%, 1);
+	padding-top: 32px;
+}
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 32px; 
+	padding-left: 24px; /* padding instead of margin keeps container color */
+}
+footer div{
+	display: flex;
+	align-items: center;
+}
+ 
+footer li{
+	padding-right: 16px; /* indiv padding to right of menu
+	                     is 16px */
+	display: inline;
+}
+.menufoot li:hover{
+	font-weight: bold;
+}
+@media only screen and (max-width: 700px){
+    .container5{
+    	margin-bottom: 16px;
+    }  
+}
+.social{
+	text-align: center;
+	padding: 32px 0;
+}
